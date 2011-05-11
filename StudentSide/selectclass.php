@@ -29,7 +29,7 @@
 	if(count($result)==1)
 	{
 		$row = $result[0];
-		header( 'Location: http://troyprog.dyndns.tv/~testres/StudentSide/selecttest.php?classname='.$row['coursenum'] ) ;
+		header( 'Location: ./selecttest.php?classname='.$row['coursenum'] ) ;
 	}
 ?>	
 

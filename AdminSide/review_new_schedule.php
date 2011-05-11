@@ -51,19 +51,19 @@
 		if($today > $date_one || $today >= $date_two)
 		{
 			$_SESSION['date_error'] = "You must a valid range of days for your test!";
-			header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/daily_scheduler.php' );
+			header( 'Location: ./daily_scheduler.php' );
 		}
 		//make sure test ends after it start
 		if($date_one > $date_two)
 		{
 			$_SESSION['date_error'] = "You must a valid range of days for your test!";
-			header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/daily_scheduler.php' );
+			header( 'Location: ./daily_scheduler.php' );
 		}
     }
     else
 	{
 		$_SESSION['date_error'] = "You must a range of days for your test!";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/daily_scheduler.php' ) ;
+		header( 'Location: ./daily_scheduler.php' ) ;
 	}
 	
 	//Check for an entered duration 
@@ -74,7 +74,7 @@
 	else
 	{
 		$_SESSION['duration_error'] = "You must enter a duration for your test!";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/daily_scheduler.php' ) ;
+		header( 'Location: ./daily_scheduler.php' ) ;
 	}
 	
 	//Check for arrary of times
@@ -85,7 +85,7 @@
 	else
 	{
 		$_SESSION['datime_error'] = "You must select atleast one time to give your test!";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/daily_scheduler.php' ) ;
+		header( 'Location: ./daily_scheduler.php' ) ;
 	}
 	
 	//Check for number of seats
@@ -96,7 +96,7 @@
 	else
 	{
 		$_SESSION['num_seats_error'] = "You must select provide atleast one seat per session to give your test!";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/daily_scheduler.php' ) ;
+		header( 'Location: ./daily_scheduler.php' ) ;
 	}
 	
 

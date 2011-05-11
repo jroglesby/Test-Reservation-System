@@ -52,7 +52,7 @@
 	echo $mt;
 	echo $temp[2];
 
-	$go = 'http://troyprog.dyndns.tv/~testres/AdminSide/calendar.php?day='.$temp[2].'&mon='.$mt;
+	$go = './calendar.php?day='.$temp[2].'&mon='.$mt;
 
 	header( 'Location: '.$go );
 ?>

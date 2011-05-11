@@ -48,7 +48,7 @@
 	{
 		//In case session expires or somehow data does not  transfer from review page
 		$_SESSION['review_error'] = "Sorry, there was an error processing your request. Please create another schedule";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/daily_scheduler.php' );
+		header( 'Location: ./daily_scheduler.php' );
 	}
 	else
 	{
@@ -60,7 +60,7 @@
 	{
 		//In case session expires or somehow data does not  transfer from review page
 		$_SESSION['review_error'] = "Sorry, there was an error processing your request. Please create another schedule";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/daily_scheduler.php' );
+		header( 'Location: ./daily_scheduler.php' );
 	}
 	else
 	{
@@ -73,7 +73,7 @@
 	{
 		//In case session expires or somehow data does not  transfer from review page
 		$_SESSION['review_error'] = "Sorry, there was an error processing your request. Please create another schedule";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/daily_scheduler.php' );
+		header( 'Location: ./daily_scheduler.php' );
 	}
 	else
 	{
@@ -86,7 +86,7 @@
 	{
 		//In case session expires or somehow data does not  transfer from review page
 		$_SESSION['review_error'] = "Sorry, there was an error processing your request. Please create another schedule";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/daily_scheduler.php' );
+		header( 'Location: ./daily_scheduler.php' );
 	}
 	else
 	{
@@ -98,7 +98,7 @@
 	{
 		//In case session expires or somehow data does not  transfer from review page
 		$_SESSION['review_error'] = "Sorry, there was an error processing your request. Please create another schedule";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/daily_scheduler.php' );
+		header( 'Location: ./daily_scheduler.php' );
 	}
 	else
 	{
@@ -112,7 +112,7 @@
 	{
 		//In case session expires or somehow data does not  transfer from review page
 		$_SESSION['review_error'] = "Sorry, there was an error processing your request. Please create another schedule";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/daily_scheduler.php' );
+		header( 'Location: ./daily_scheduler.php' );
 	}
 	else
 	{
@@ -125,7 +125,7 @@
 	{
 		//In case session expires or somehow data does not  transfer from review page
 		$_SESSION['review_error'] = "Sorry, there was an error processing your request. Please create another schedule";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/daily_scheduler.php' );
+		header( 'Location: ./daily_scheduler.php' );
 	}
 	else
 	{
@@ -138,7 +138,7 @@
 	{
 		//In case session expires or somehow data does not  transfer from review page
 		$_SESSION['review_error'] = "Sorry, there was an error processing your request. Please create another schedule";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/daily_scheduler.php' );
+		header( 'Location: ./daily_scheduler.php' );
 	}
 	else
 	{
@@ -151,7 +151,7 @@
 	{
 		//In case session expires or somehow data does not  transfer from review page
 		$_SESSION['review_error'] = "Sorry, there was an error processing your request. Please create another schedule";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/daily_scheduler.php' );
+		header( 'Location: ./daily_scheduler.php' );
 	}
 	else
 	{
@@ -164,7 +164,7 @@
 	{
 		//In case session expires or somehow data does not  transfer from review page
 		$_SESSION['review_error'] = "Sorry, there was an error processing your request. Please create another schedule";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/daily_scheduler.php' );
+		header( 'Location: ./daily_scheduler.php' );
 	}
 	else
 	{
@@ -178,5 +178,5 @@
 	//add sessions to the test
 	$ret = create_sessions($test_days_array, $test_times_array, $t_id, $loc_id, $seat_capacity, $duration);
 	$_SESSION["message"] = $ret;
-	header("Location: http://troyprog.dyndns.tv/~testres/AdminSide/admin.php");
+	header("Location: ./admin.php");
 ?>

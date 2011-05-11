@@ -20,7 +20,7 @@
 	$seshid = $_REQUEST['seshid'];
 	deleteReservation($fsuid, $seshid, $con);
 	$_SESSION['message'] = "Your reservation has been removed.";
-	header( 'Location: http://troyprog.dyndns.tv/~testres/StudentSide/student.php' );
+	header( 'Location: ./student.php' );
 ?>
 
 

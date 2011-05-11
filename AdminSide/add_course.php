@@ -36,7 +36,7 @@
 	else
 	{
 		$_SESSION['message'] = "Please enter a course name";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/edit_course.php' ) ;
+		header( 'Location: ./edit_course.php' ) ;
 		exit;
 	}
 	if($_REQUEST['cNum'] != NULL)
@@ -46,7 +46,7 @@
 	else
 	{
 		$_SESSION['message'] = "Please enter a course number";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/edit_course.php' ) ;
+		header( 'Location: ./edit_course.php' ) ;
 		exit;
 	}
 	if($_REQUEST['cSec'] != NULL)
@@ -56,12 +56,12 @@
 	else
 	{
 		$_SESSION['message'] = "Please enter a section for the course";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/edit_course.php' ) ;
+		header( 'Location: ./edit_course.php' ) ;
 		exit;
 	}
 	
 		$ret = add_course($cNum, $cSec, $cName);
 		$_SESSION["message"] = $ret;
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/admin.php' ) ;
+		header( 'Location: ./admin.php' ) ;
 
 ?>

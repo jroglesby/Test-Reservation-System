@@ -63,7 +63,7 @@
 		if(count($arr) != 0) //matching test
 		{
 			$_SESSION['name_error'] = "You must enter a new test name, one that is not already in use for this course!";
-			header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/test_scheduler.php' ) ;
+			header( 'Location: ./test_scheduler.php' ) ;
 			exit;
 		}
 		
@@ -71,7 +71,7 @@
 	else
 	{
 		$_SESSION['name_error'] = "You must enter a valid test name, one that is actually there!";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/test_scheduler.php' ) ;
+		header( 'Location: ./test_scheduler.php' ) ;
 		exit;
 	}
    
@@ -93,21 +93,21 @@
 		if($today > $date_one || $today >= $date_two)
 		{
 			$_SESSION['date_error'] = "You must create a valid registration window for your test!";
-			header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/test_scheduler.php' ) ;
+			header( 'Location: ./test_scheduler.php' ) ;
 			exit;
 		}
 		//make sure test ends after it start
 		if($date_one > $date_two)
 		{
 			$_SESSION['date_error'] = "You must create a valid registration window for your test!";
-			header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/test_scheduler.php' ) ;
+			header( 'Location: ./test_scheduler.php' ) ;
 			exit;
 		}
     }
     else
 	{
 		$_SESSION['date_error'] = "You must create a valid registration window for your test!";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/test_scheduler.php' ) ;
+		header( 'Location: ./test_scheduler.php' ) ;
 		exit;
 	}
 

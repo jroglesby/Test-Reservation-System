@@ -37,14 +37,14 @@
 		
 		add_location($lName);	
 		$_SESSION["message"] = "Location '$lName' successfully added";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/admin.php' ) ;
+		header( 'Location: ./admin.php' ) ;
 			
 			
 	}
 	else
 	{
 		$_SESSION['message'] = "Error adding location, please check if it already exists!";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/location.php' ) ;
+		header( 'Location: ./location.php' ) ;
 		exit;
 	}
 ?>

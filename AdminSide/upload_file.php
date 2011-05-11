@@ -131,7 +131,7 @@
 							}
 							if (count($badArray, 0) > 0){
 							?>
-							<a href="./troy/edit_course.php" class="selectlink">Add Course Here.</a>
+							<a href="./edit_course.php" class="selectlink">Add Course Here.</a>
 							<?php
 							}
 							?>

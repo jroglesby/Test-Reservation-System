@@ -32,5 +32,5 @@
 	$str_to_parse = $_REQUEST['courseNsect'];
 	$ret = remove_course($str_to_parse);
 	$_SESSION["message"] = $ret;
-	header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/admin.php' ) ;
+	header( 'Location: ./admin.php' ) ;
 ?>

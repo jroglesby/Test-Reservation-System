@@ -30,23 +30,23 @@
 			
 			if($row['reset_password'] == 1)
 			{
-				header( 'Location: http://troyprog.dyndns.tv/~testres/changepassword.php' ) ;
+				header( 'Location: ./changepassword.php' ) ;
 			}
 			
 			else if ($row['role'] == 1)
 			{
-				header( 'Location: http://troyprog.dyndns.tv/~testres/StudentSide/student.php' ) ;
+				header( 'Location: ./StudentSide/student.php' ) ;
 			}
 			elseif($row['role'] == 2)
 			{
-				header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/admin.php' ) ;
+				header( 'Location: ./AdminSide/admin.php' ) ;
 			}
 			
 		}
 		else
 		{
 			$_SESSION['message'] = "Invalid username or password.";
-			header( 'Location: http://troyprog.dyndns.tv/~testres/testres.php' ) ;
+			header( 'Location: ./testres.php' ) ;
 			
 		}
 	?>

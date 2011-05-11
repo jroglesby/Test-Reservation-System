@@ -199,7 +199,7 @@
 <a class="selectlink" target="" href="/SpaceUtilizationUSMS/servlet/USMSNavigationServlet?CALLINGURI=/jsp/menu.jsp&noheader=true&nofooter=true&SESSIONID=9ba04ce1a863bcd94807df42d651&uid=&ORIGIN=J">USMS (Space Management)</a>
 </li>
 <li>
-<a class="selectlink" target="" href="http://troyprog.dyndns.tv/~testres/testres.php">Test Reservation System</a>
+<a class="selectlink" target="" href="./testres.php">Test Reservation System</a>
 </li>
 </ul>
 </div>

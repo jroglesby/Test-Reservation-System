@@ -36,7 +36,7 @@
 	$_SESSION['makeup'] = checkIfMakeup($coursenum, $testid);
 	if($_SESSION['makeup']==false)
 	{
-		header( 'Location: http://troyprog.dyndns.tv/~testres/StudentSide/searchsession.php?classname='.$coursenum.'&testid='.$testid.'&makeup=false');
+		header( 'Location: ./searchsession.php?classname='.$coursenum.'&testid='.$testid.'&makeup=false');
 	}	
 ?>
 	

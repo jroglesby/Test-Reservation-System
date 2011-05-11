@@ -40,14 +40,14 @@
 	{
 		insertReservation($fsuid, $seshid, $testid, $_SESSION['makeup']);
 		$_SESSION['message'] = "Your reservation has been set.";
-		header( 'Location: http://troyprog.dyndns.tv/~testres/StudentSide/student.php' );
+		header( 'Location: ./student.php' );
 	}
 	else
 	{
 		$result = checkReservationExists($fsuid, $testid);
 		if(count($result) == 0)
 		{
-			header( "Location: http://troyprog.dyndns.tv/~testres/StudentSide/makereservation.php?seshid=$seshid&testid=$testid&continue=continue" );
+			header( "Location: ./makereservation.php?seshid=$seshid&testid=$testid&continue=continue" );
 		}
 		else
 		{
