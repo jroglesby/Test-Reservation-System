@@ -1,0 +1,76 @@
+CREATE TABLE user
+(
+fsuid CHAR(16) PRIMARY KEY,
+fname CHAR(50),
+lname CHAR(50),
+password CHAR(50),
+reset_password BOOLEAN,
+role INT,
+CONSTRAINT valid_role CHECK(role>0 AND role<3)
+);
+
+CREATE TABLE course
+(
+coursenum CHAR(8),
+section INT,
+cname CHAR(20),
+PRIMARY KEY (coursenum, section)
+);
+
+CREATE TABLE enrollment
+(
+fsuid CHAR(16),
+coursenum CHAR(8),
+section INT,
+PRIMARY KEY  (fsuid, coursenum, section),
+FOREIGN KEY (fsuid) REFERENCES user(fsuid) ON DELETE CASCADE,
+FOREIGN KEY (coursenum) REFERENCES course(coursenum) ON DELETE CASCADE,
+FOREIGN KEY (section) REFERENCES course(section)
+);
+
+CREATE TABLE test
+(
+testid INT AUTO_INCREMENT,
+testname CHAR(20),
+coursenum CHAR(8),
+section INT,
+reg_win_open DATE,
+reg_win_close DATE,
+PRIMARY KEY (testid),
+FOREIGN KEY (coursenum) REFERENCES course(coursenum) ON DELETE CASCADE,
+FOREIGN KEY (section) REFERENCES course(section)
+);
+
+CREATE TABLE location
+(
+locid INT PRIMARY KEY AUTO_INCREMENT,
+name CHAR(20),
+CONSTRAINT no_dup UNIQUE(name)
+);
+
+CREATE TABLE test_session
+(
+seshid INT AUTO_INCREMENT,
+testid INT,
+locid INT,
+total_seats INT,
+seats_avail INT,
+duration INT,
+day DATE,
+session_time TIME,
+PRIMARY KEY(seshid),
+FOREIGN KEY (testid) REFERENCES test(testid) ON DELETE CASCADE, 
+FOREIGN KEY (locid) REFERENCES loc(locid),
+CONSTRAINT day_time_con UNIQUE(testid, day, session_time)
+);
+
+CREATE TABLE reservation
+(
+fsuid CHAR(16),
+tsid INT,
+testid INT,
+isMakeup BOOLEAN,
+PRIMARY KEY (fsuid, tsid),
+FOREIGN KEY (fsuid) REFERENCES user(fsuid) ON DELETE CASCADE,
+FOREIGN KEY (tsid) REFERENCES test_session(tsid) ON DELETE CASCADE
+);

@@ -1,0 +1,7 @@
+insert into enrollment values ('agp06', 'CGS2060', '0');
+insert into enrollment values ('hps08', 'CGS2100', '0');
+insert into enrollment values ('atm08j', 'CGS2060', '0');
+insert into enrollment values ('wph1931', 'CGS2060', '0');
+insert into enrollment values ('jns07c', 'CGS2100', '0');
+insert into enrollment values ('tmr08c', 'CEN4021', '1');
+insert into enrollment values ('jro08', 'CGS2060', '0');

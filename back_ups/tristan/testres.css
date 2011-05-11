@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* BOX STYLES GO HERE */
+
+.topbar{
+	background-color:#540115;
+	
+}
+
+.main_box_background {
+	background-image: url(scanLinesBg.gif);
+	background-color:#fff;
+	border-width:1px;
+	border-style:solid;
+	border-color:#000000;
+	width:795px;
+	height:600px;
+}
+.displaySessionBox{
+	height:50px;
+}
+.headerbox
+{
+	background-color:#ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #990000;
+	font-weight:bold;
+	height:30px;
+}
+.inner_box_background {
+	background-color:#ffffff;
+	border-width:1px 1px 1px 1px;
+	border-style:solid;
+	width:600px;
+	height:350px;
+}
+.searchboxtop{
+	background-color:#ffffff;
+	border-width:1px 1px 1px 1px;
+	border-style:solid;
+	width:600px;
+	height:100px;
+}
+.reservationpagebox
+{
+	border-top:1px;
+	border-bottom:1px;
+	border-left:0px;
+	border-right:0px;
+	border-style:solid;
+}
+
+.checkboxtd{
+	width:100px;
+	vertical-align:top;
+}
+	
+
+/* FONTS GO HERE */
+
+.mainfont {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.checklist {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.headerfont{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #990000;
+	font-weight:bold;
+}
+
+.tableheader {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	text-decoration: underline;
+}
+
+.cornercaption {
+	font-size:18px;
+	font-style:italic;
+	font-weight:bold;
+	color:#990000;
+}
+
+.message {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:550;
+	font-style:italic;
+	color:red;
+}	
+
+.warning{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:700;
+	color:red;
+}
+
+.makeupyes{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:500;
+	color:red;
+}
+
+.makeupno{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:550;
+	color:green;
+}
+	
+/* LINKS */
+
+.headlink{
+	color:#CDC092;
+	font-style:italic;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.callink1{
+	color:#FFFFFF;
+}
+
+.callink2{
+	color:#FF0000;
+}
+
+.selectlink{
+	color:#540115;
+}
+
+
+/* MISC */
+
+.hidden{
+	visibility:hidden;
+}
+.show{
+	visibility:visible;
+}
+
+body
+{
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:0px;
+	background-color:#ffffff;
+}

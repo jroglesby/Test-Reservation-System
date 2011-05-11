@@ -1,0 +1,9 @@
+insert into user values ('tmr08c', 'troy', 'rosenberg', 'p@55', '1');
+insert into user values ('jns07c', 'jill', 'seilhan', 'hawtness', '1');
+insert into user values ('agp06', 'apple', 'gomps', 'jobs', '1');
+insert into user values ('hps08', 'hollie', 'schindler', 'bobby', '1');
+insert into user values ('atm08j', 'andrew', 'miller', 'g00dp@55', '1');
+insert into user values ('wph1931', 'patrick', 'hightower', 'iPADrox', '1');
+insert into user values ('dgaitros', 'david', 'gaitros', 'america', '2');
+insert into user values ('jro08', 'justin', 'oglesby', 'password', '1');
+insert into user values ('oglesby', 'justin', 'oglesby', 'password', '2');

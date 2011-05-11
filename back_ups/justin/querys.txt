@@ -1,0 +1,6 @@
+select * from test t1 where exists (select * from reservation r1 where r1.testid=t1.testid and r1.fsuid=$fsuid) and ;
+select * from test t1 where not exists (select * from reservation r1 where r1.testid=t1.testid);
+
+
+select * from test t1, course c1 where t1.courseid=c1.courseid and c1.courseid in (select * from enrollment e1 where c1.courseid = e1.courseid and e1.fsuid=$fsuid);
+

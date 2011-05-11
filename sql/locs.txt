@@ -1,0 +1,3 @@
+insert into location (name) values ('UCC1200');
+insert into location (name) values ('3-15A MCH'); 
+insert into location (name) values ('LOV012');

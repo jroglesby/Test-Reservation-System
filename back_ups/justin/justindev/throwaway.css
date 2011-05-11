@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+.main_box_background {
+	background-image: url(scanLinesBg.gif);
+	background-color:#fff;
+	border-width:1px 1px 1px 1px;
+	border-style:solid;
+	border-color:#CC6;
+	margin:0px auto;
+	width:795px;
+}
+.center_box_background {
+	background-color:#ffffff;
+	border-width:1px 1px 1px 1px;
+	border-style:solid;
+}
+.mainfont {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.checklist {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.headerfont{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #990000;
+	
+}
+
+.hidden{
+	visibility:hidden;
+}
+.show{
+	visibility:visible;
+}
+
+.headlink{
+	color:#CDC092;
+	text-decoration:italic;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.selectlink{
+	color:#540115;
+}
+
+.reservationpagebox
+{
+	border-width:1px 1px 1px 1px;
+	border-style:solid;
+}
+
+.blackborder
+{
+	border: 1px solid #000000;
+}
+
+.tableheader
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+.message
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:red;
+}
