@@ -1,5 +1,5 @@
 <?php
-	$localhost = "dbsrv.cs.fsu.edu";
+	$localhost = "dbsrv.cs.fsu.edu:3306";
 	$dbusername = "trosenbe";
 	$dbpassword = "9k1MaRZ2";
 	$dbname = "tro_cap_ogl_ami_db"
@@ -8,7 +8,7 @@
 		if( !array_key_exists('fsuid', $_SESSION) )
 		{
 			$_SESSION['message'] = "Please sign in.";
-			header( 'Location: http://troyprog.dyndns.tv/~testres/testres.php' ) ;
+			header( 'Location: ./testres.php' ) ;
 		}
 		
 	}
@@ -33,7 +33,7 @@
 		$con = mysql_connect($localhost, $dbusername, $dbpassword);
 		if(!$con)
 		{
-			die("Couldn't connect to SQL host");
+			die("Couldn't connect to SQL host ".mysql_error());
 		}
 		mysql_select_db($dbname, $con);
 		
@@ -609,7 +609,7 @@
 		if(count($arr) != 0) //matching test
 		{
 			$_SESSION['message'] = "Error adding location, please check if it already exists!";
-			header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/location.php' ) ;
+			header( 'Location: ./AdminSide/location.php' ) ;
 			exit;
 		}
 		else
@@ -623,7 +623,7 @@
 			mysql_query($insert);
 			
 			$_SESSION["message"] = "Location '$lName' successfully added";
-			header( 'Location: http://troyprog.dyndns.tv/~testres/AdminSide/admin.php' ) ;
+			header( 'Location: ./AdminSide/admin.php' ) ;
 			
 			
 		}
@@ -675,7 +675,7 @@
 		if(count($loc_arr)>1)
 		{
 			$_SESSION['loc_error'] = "There was an error with your location request, please try again!";
-			header( 'Location: http://troyprog.dyndns.tv/~testres/troy/templated_test_scheduler.php' ) ;
+			header( 'Location: ./AdminSide/test_scheduler.php' ) ;
 			exit;
 		}
 		else
