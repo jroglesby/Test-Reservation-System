@@ -1,9 +1,8 @@
 <?php
-	$localhost = "localhost:3306";
-	$dbusername = "testres";
-	$dbpassword = "gaitros";
-	$dbname = "test_reservation_system";
-
+	$localhost = "dbsrv.cs.fsu.edu";
+	$dbusername = "trosenbe";
+	$dbpassword = "9k1MaRZ2";
+	$dbname = "tro_cap_ogl_ami_db"
 	function redirect()
 	{
 		if( !array_key_exists('fsuid', $_SESSION) )
